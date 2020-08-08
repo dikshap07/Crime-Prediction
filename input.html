@@ -1,0 +1,130 @@
+
+<html>
+<head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Prediction Web App</title>
+    
+    </head>
+    <style>
+h1 {
+  position: absolute;
+  left:1000px;
+  top: 40px;
+  
+  font-size: 55px;
+}
+</style>
+
+<body>
+  <link href= "{{ url_for('static',filename='styles/layout.css') }}" rel="stylesheet"  type="text/css">
+
+	<h1><font 
+      face = "sans-serif"
+          color = #FFFFFF > 
+          
+        Crime Prediction for Mumbai </font></h1>
+	
+	<div class="input-form">
+	<form  action="http://localhost:5000" method="POST">
+		<label for="VIC_SEX">Gender</label> 
+    	<select id="VIC_SEX" name="VIC_SEX" required>
+    		<option >    </option>
+    	    <option value="0">Female</option> 
+      		<option value="1">Male</option> 
+        </select> 
+        
+        <br> 
+
+		<label for="VIC_AGE_GROUP">Age Group</label> 
+        <select id="VIC_AGE_GROUP" name="VIC_AGE_GROUP" required >
+        	<option >    </option> 
+        	<option value="4"><18</option>
+       		<option value="0">18-24</option> 
+        	<option value="1">25-44</option> 
+        	<option value="2">45-64</option> 
+        	<option value="3">65+</option> 
+        	 
+    	</select> 
+
+
+        <br>
+        <label for="AREA_OF_CRIME">Area</label> 
+        <select id="AREA_OF_CRIME" name="AREA_OF_CRIME" required>
+        	<option >    </option> 
+      		<option value="0">ANDHERI</option> 
+      		<option value="1">BORIVALI</option> 
+      		<option value="2">DADAR</option> 
+      		<option value="3">NAVI MUMBAI</option> 
+      		<option value="4">THANE</option> 
+
+      	</select>
+
+      	<br>
+
+      	<labeL  for = "PlACE_OF_CRIME">Place</labeL>
+      	<select id = "PlACE_OF_CRIME" name ="PlACE_OF_CRIME" required>
+      		<option >    </option>
+      		<option value = "0">ABANDONED BUILDING</option>
+			<option value = "1">AIRPORT TERMINAL</option>
+			<option value = "2">ATM</option>
+ 			<option value = "3">BANK</option>
+			<option value = "4">BAR/NIGHT CLUB</option>
+			<option value = "5">BEAUTY & NAIL SALON</option>
+			<option value = "6">BRIDGE</option>
+			<option value = "7">BUS (OTHER)</option>
+			<option value = "8">BUS STOP</option>
+			<option value = "9">CEMETERY</option>
+			<option value = "10">CHAIN STORE</option>
+			<option value = "11">CHURCH</option>
+      <option value = "12">CLOTHING/BOUTIQUE</option>
+      <option value = "13">COMMERCIAL BUILDING</option>
+      <option value = "15">DEPARTMENT STORE</option>
+      <option value = "16">DOCTOR/DENTIST OFFICE</option>
+			<option value = "17">DRUG STORE</option>
+            <option value = "18">DRY CLEANER/LAUNDRY</option>
+			<option value = "19">FACTORY/WAREHOUSE</option>
+			<option value = "20">FERRY/FERRY TERMINAL</option>
+			<option value = "21">FOOD SUPERMARKET</option>
+			<option value = "22">GYM/FITNESS FACILITY</option>
+			<option value = "23">HIGHWAY/PARKWAY</option>
+			<option value = "24">HOSPITAL</option>
+			<option value = "25">HOTEL/MOTEL</option>
+			<option value = "26">JEWELRY</option>
+			<option value = "27">LIQUOR STORE</option>
+			<option value = "28">LOAN COMPANY</option>
+			<option value = "29">LOCAL TRAIN</option>
+            <option value = "30">MARINA/PIER</option>
+			<option value = "31">MOSQUE</option>
+			<option value = "32">OPEN AREAS (OPEN LOTS)</option>
+			<option value = "33">OTHER </option>
+			<option value = "34">OTHER HOUSE OF WORSHIP</option>
+			<option value = "35">PARK/PLAYGROUND</option>
+			<option value = "36">PARKING LOT/GARAGE</option>
+			<option value = "37">PETROL PUMP</option>
+			<option value = "38">PUBLIC BUILDING</option>
+			<option value = "39">RESIDENCE - APT. HOUSE</option>
+			<option value = "40">RESIDENCE - PUBLIC HOUSING</option>
+			<option value = "41">RESIDENCE-HOUSE</option>
+			<option value = "42">RESTAURANT/DINER</option>
+			<option value = "43">SCHOOL</option>
+			<option value = "44">SMALL MERCHANT</option>
+			<option value = "45">STORE</option>
+			<option value = "46">STREET</option>
+			<option value = "47">TAXI (YELLOW LICENSED)</option>
+			<option value = "48">TAXI(LICENSED)</option>
+			<option value = "49">TAXI(UNLICENSED)</option>
+            <option value = "50">TUNNEL</option>
+
+
+     	</select>
+     	<br>
+		<input type="submit" value="Submit"> 
+    </form> 
+</div> 
+
+	</body> 
+</html>      		
+
+
+

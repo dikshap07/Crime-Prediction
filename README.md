@@ -5,4 +5,5 @@
 - With four input features, the model is predicting 11 different crime classes (eg. Assault, murder, robbery, larceny, etc).
 - Used Label encoding to convert categorical data to numerical data.
 - Trained the data on many classification models like Decision Tree, KNN, Adaboost, and XgBoost to compare and got maximum accuracy of 68%.
-- Using this application, user can take measures to prevent falling victim to the crimes predicted by the application
+- Using this application, user can take measures to prevent falling victim to the crimes predicted by the application.
+

@@ -7,3 +7,7 @@
 - Trained the data on many classification models like Decision Tree, KNN, Adaboost, and XgBoost to compare and got maximum accuracy of 68%.
 - Using this application, user can take measures to prevent falling victim to the crimes predicted by the application.
 
+
+
+
+
